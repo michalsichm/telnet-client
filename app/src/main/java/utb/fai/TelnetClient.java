@@ -29,7 +29,7 @@ public class TelnetClient {
                         if (socket.getInputStream().available() > 0) {
                             String serverResponse = reader.readLine();
                             if (serverResponse != null) {
-                                System.out.println("Server: " + serverResponse);
+                                System.out.println(serverResponse);
                             }
                         }
                         Thread.sleep(20);
